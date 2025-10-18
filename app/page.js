@@ -526,23 +526,23 @@ export default function Portfolio() {
       {/* Projects Section */}
       <section id="projects" ref={projectsRef} className="py-20">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">Featured Projects</h2>
+          <h2 className="projects-heading text-4xl md:text-5xl font-bold mb-12 text-center">Featured Projects</h2>
           <div className="projects-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, index) => (
               <Card key={index} className="project-card p-6 hover:shadow-xl transition-shadow group">
-                <div className="h-48 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg mb-4 flex items-center justify-center group-hover:scale-105 transition-transform">
+                <div className="project-image h-48 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg mb-4 flex items-center justify-center group-hover:scale-105 transition-transform">
                   <Code className="h-16 w-16 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-muted-foreground mb-4">{project.description}</p>
+                <h3 className="project-title text-xl font-bold mb-2">{project.title}</h3>
+                <p className="project-description text-muted-foreground mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, i) => (
-                    <span key={i} className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">
+                    <span key={i} className="project-tag px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">
                       {tag}
                     </span>
                   ))}
                 </div>
-                <Button variant="ghost" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                <Button variant="ghost" className="project-button w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                   View Project <ExternalLink className="ml-2 h-4 w-4" />
                 </Button>
               </Card>
