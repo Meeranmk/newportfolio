@@ -46,20 +46,73 @@ export default function Portfolio() {
         ease: 'back.out(1.7)'
       })
 
-      // About section animation
-      gsap.from('.about-content', {
+      // Parallax effect for hero background
+      gsap.to('.hero-bg', {
         scrollTrigger: {
-          trigger: '.about-content',
-          start: 'top 80%',
+          trigger: heroRef.current,
+          start: 'top top',
+          end: 'bottom top',
+          scrub: true
+        },
+        y: 300,
+        ease: 'none'
+      })
+
+      // About section heading animation
+      gsap.from('.about-heading', {
+        scrollTrigger: {
+          trigger: '.about-heading',
+          start: 'top 85%',
           toggleActions: 'play none none reverse'
         },
         opacity: 0,
-        x: -100,
-        duration: 1,
+        y: 50,
+        duration: 0.8,
         ease: 'power3.out'
       })
 
-      // Projects stagger animation
+      // About paragraphs animation
+      gsap.from('.about-text', {
+        scrollTrigger: {
+          trigger: '.about-text',
+          start: 'top 85%',
+          toggleActions: 'play none none reverse'
+        },
+        opacity: 0,
+        x: -50,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: 'power3.out'
+      })
+
+      // Social icons animation
+      gsap.from('.social-icon', {
+        scrollTrigger: {
+          trigger: '.social-icons',
+          start: 'top 85%',
+          toggleActions: 'play none none reverse'
+        },
+        opacity: 0,
+        scale: 0,
+        duration: 0.5,
+        stagger: 0.1,
+        ease: 'back.out(2)'
+      })
+
+      // Projects heading animation
+      gsap.from('.projects-heading', {
+        scrollTrigger: {
+          trigger: '.projects-heading',
+          start: 'top 85%',
+          toggleActions: 'play none none reverse'
+        },
+        opacity: 0,
+        scale: 0.8,
+        duration: 0.8,
+        ease: 'back.out(1.7)'
+      })
+
+      // Project cards animation
       gsap.from('.project-card', {
         scrollTrigger: {
           trigger: '.projects-grid',
@@ -67,13 +120,97 @@ export default function Portfolio() {
           toggleActions: 'play none none reverse'
         },
         opacity: 0,
-        y: 50,
+        y: 80,
         duration: 0.8,
-        stagger: 0.2,
+        stagger: 0.15,
         ease: 'power3.out'
       })
 
-      // Skills animation
+      // Project card images animation
+      gsap.from('.project-image', {
+        scrollTrigger: {
+          trigger: '.projects-grid',
+          start: 'top 80%',
+          toggleActions: 'play none none reverse'
+        },
+        opacity: 0,
+        scale: 0.8,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: 'power2.out'
+      })
+
+      // Project titles animation
+      gsap.from('.project-title', {
+        scrollTrigger: {
+          trigger: '.projects-grid',
+          start: 'top 75%',
+          toggleActions: 'play none none reverse'
+        },
+        opacity: 0,
+        x: -30,
+        duration: 0.6,
+        stagger: 0.15,
+        ease: 'power2.out'
+      })
+
+      // Project descriptions animation
+      gsap.from('.project-description', {
+        scrollTrigger: {
+          trigger: '.projects-grid',
+          start: 'top 75%',
+          toggleActions: 'play none none reverse'
+        },
+        opacity: 0,
+        y: 20,
+        duration: 0.6,
+        stagger: 0.15,
+        delay: 0.2,
+        ease: 'power2.out'
+      })
+
+      // Project tags animation
+      gsap.from('.project-tag', {
+        scrollTrigger: {
+          trigger: '.projects-grid',
+          start: 'top 70%',
+          toggleActions: 'play none none reverse'
+        },
+        opacity: 0,
+        scale: 0.5,
+        duration: 0.4,
+        stagger: 0.05,
+        ease: 'back.out(2)'
+      })
+
+      // Project buttons animation
+      gsap.from('.project-button', {
+        scrollTrigger: {
+          trigger: '.projects-grid',
+          start: 'top 70%',
+          toggleActions: 'play none none reverse'
+        },
+        opacity: 0,
+        y: 20,
+        duration: 0.6,
+        stagger: 0.15,
+        ease: 'power2.out'
+      })
+
+      // Skills heading animation
+      gsap.from('.skills-heading', {
+        scrollTrigger: {
+          trigger: '.skills-heading',
+          start: 'top 85%',
+          toggleActions: 'play none none reverse'
+        },
+        opacity: 0,
+        rotationY: 90,
+        duration: 1,
+        ease: 'power3.out'
+      })
+
+      // Skills cards animation
       gsap.from('.skill-card', {
         scrollTrigger: {
           trigger: '.skills-grid',
@@ -81,9 +218,53 @@ export default function Portfolio() {
           toggleActions: 'play none none reverse'
         },
         opacity: 0,
-        scale: 0.8,
+        scale: 0.5,
+        rotation: -15,
+        duration: 0.7,
+        stagger: 0.12,
+        ease: 'back.out(2)'
+      })
+
+      // Skill icons animation
+      gsap.from('.skill-icon', {
+        scrollTrigger: {
+          trigger: '.skills-grid',
+          start: 'top 75%',
+          toggleActions: 'play none none reverse'
+        },
+        opacity: 0,
+        rotation: 180,
+        scale: 0,
+        duration: 0.8,
+        stagger: 0.12,
+        ease: 'back.out(2)'
+      })
+
+      // Skill names animation
+      gsap.from('.skill-name', {
+        scrollTrigger: {
+          trigger: '.skills-grid',
+          start: 'top 75%',
+          toggleActions: 'play none none reverse'
+        },
+        opacity: 0,
+        y: 20,
         duration: 0.6,
-        stagger: 0.15,
+        stagger: 0.12,
+        delay: 0.3,
+        ease: 'power2.out'
+      })
+
+      // Contact heading animation
+      gsap.from('.contact-heading', {
+        scrollTrigger: {
+          trigger: '.contact-heading',
+          start: 'top 85%',
+          toggleActions: 'play none none reverse'
+        },
+        opacity: 0,
+        scale: 0.5,
+        duration: 0.8,
         ease: 'back.out(1.7)'
       })
 
@@ -100,16 +281,95 @@ export default function Portfolio() {
         ease: 'power3.out'
       })
 
-      // Parallax effect for hero background
-      gsap.to('.hero-bg', {
+      // Form fields animation
+      gsap.from('.form-field', {
         scrollTrigger: {
-          trigger: heroRef.current,
-          start: 'top top',
-          end: 'bottom top',
-          scrub: true
+          trigger: '.contact-form',
+          start: 'top 75%',
+          toggleActions: 'play none none reverse'
         },
-        y: 300,
+        opacity: 0,
+        x: -30,
+        duration: 0.6,
+        stagger: 0.15,
+        ease: 'power2.out'
+      })
+
+      // Submit button animation
+      gsap.from('.submit-button', {
+        scrollTrigger: {
+          trigger: '.contact-form',
+          start: 'top 75%',
+          toggleActions: 'play none none reverse'
+        },
+        opacity: 0,
+        scale: 0.8,
+        duration: 0.6,
+        delay: 0.6,
+        ease: 'back.out(2)'
+      })
+
+      // Footer animation
+      gsap.from('.footer-text', {
+        scrollTrigger: {
+          trigger: '.footer-text',
+          start: 'top 90%',
+          toggleActions: 'play none none reverse'
+        },
+        opacity: 0,
+        y: 30,
+        duration: 0.8,
+        ease: 'power2.out'
+      })
+
+      // Continuous scroll animations - parallax elements
+      gsap.to('.project-image', {
+        scrollTrigger: {
+          trigger: '.projects-grid',
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: 1
+        },
+        y: -30,
         ease: 'none'
+      })
+
+      // Hover animations for project cards
+      document.querySelectorAll('.project-card').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+          gsap.to(card, {
+            y: -10,
+            duration: 0.3,
+            ease: 'power2.out'
+          })
+        })
+        card.addEventListener('mouseleave', () => {
+          gsap.to(card, {
+            y: 0,
+            duration: 0.3,
+            ease: 'power2.out'
+          })
+        })
+      })
+
+      // Hover animations for skill cards
+      document.querySelectorAll('.skill-card').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+          gsap.to(card.querySelector('.skill-icon'), {
+            rotation: 360,
+            scale: 1.2,
+            duration: 0.5,
+            ease: 'back.out(2)'
+          })
+        })
+        card.addEventListener('mouseleave', () => {
+          gsap.to(card.querySelector('.skill-icon'), {
+            rotation: 0,
+            scale: 1,
+            duration: 0.5,
+            ease: 'back.out(2)'
+          })
+        })
       })
     })
 
