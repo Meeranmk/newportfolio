@@ -203,8 +203,8 @@ export default function Portfolio() {
 
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-5xl mx-auto text-center">
-            <h1 className="hero-main-title text-5xl md:text-8xl font-bold mb-6">Frontend Developer</h1>
-            <h2 className="hero-subtitle-text text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">Building Seamless Experiences</h2>
+            <h1 className="hero-main-title text-3xl md:text-8xl font-bold mb-6">Frontend Developer</h1>
+            <h2 className="hero-subtitle-text text-3xl md:text-5xl font-bold mb-3 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">Building Seamless Experiences</h2>
             <p className="hero-description text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">Specializing in React.js, Next.js, and modern web technologies to create responsive, high-performance applications</p>
             <div className="hero-cta flex gap-4 justify-center flex-wrap">
               <Button size="lg" className="bg-gradient-to-r from-blue-500 to-purple-500 hover:opacity-90"><a href="#projects">View Projects</a></Button>
@@ -220,35 +220,21 @@ export default function Portfolio() {
           <div className="about-content max-w-5xl mx-auto">
             <h2 className="about-heading text-4xl md:text-6xl font-bold mb-12 text-center">About Me</h2>
             <div className="space-y-6 mb-12">
-              <p className="about-paragraph text-lg text-muted-foreground">I'm a Frontend Developer passionate about building responsive, high-performance web applications that deliver seamless user experiences.</p>
-              <p className="about-paragraph text-lg text-muted-foreground">I specialize in React.js, Next.js, JavaScript, HTML5, CSS3, Tailwind CSS, and Bootstrap crafting clean, scalable, and maintainable frontends that bring ideas to life.</p>
+              <p className="about-paragraph text-lg text-muted-foreground">I'm a Frontend Developer passionate about building responsive, high-performance web applications that deliver seamless user experiences.
+              I specialize in React.js, Next.js, JavaScript, HTML5, CSS3, Tailwind CSS, and Bootstrap crafting clean, scalable, and maintainable frontends that bring ideas to life.</p>
             </div>
 
             <div className="toolkit-section mb-12">
-              {/* <h3 className="text-2xl font-bold mb-6 text-center">My Toolkit</h3> */}
-              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+              {/* <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
                 {toolkit.map((tool, index) => (
                   <div key={index} className="toolkit-item bg-card p-4 rounded-lg text-center hover:bg-primary hover:text-primary-foreground transition-all duration-300 border">
                     <p className="text-sm font-medium">{tool}</p>
                   </div>
                 ))}
-              </div>
-            </div>
-
-            <div className="skills-list mb-12">
-              {/* <h3 className="text-2xl font-bold mb-6">Core Skills</h3>
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="skill-item space-y-2"><h4 className="font-bold text-primary">Frontend Development</h4><p className="text-muted-foreground">React.js, Next.js, Redux, Context API</p></div>
-                <div className="skill-item space-y-2"><h4 className="font-bold text-primary">UI & Styling</h4><p className="text-muted-foreground">Tailwind CSS, Bootstrap, Material UI</p></div>
-                <div className="skill-item space-y-2"><h4 className="font-bold text-primary">API Integration</h4><p className="text-muted-foreground">RESTful APIs, GraphQL</p></div>
-                <div className="skill-item space-y-2"><h4 className="font-bold text-primary">Version Control & Build Tools</h4><p className="text-muted-foreground">Git, GitHub, NPM, Yarn, Webpack</p></div>
-                <div className="skill-item space-y-2"><h4 className="font-bold text-primary">Developer Platforms</h4><p className="text-muted-foreground">Backstage.io (IDP)</p></div>
-                <div className="skill-item space-y-2"><h4 className="font-bold text-primary">Design & Networking</h4><p className="text-muted-foreground">Figma, CCNA-certified</p></div>
               </div> */}
+               <p className="about-paragraph text-lg text-muted-foreground text-center mb-8">Let's connect and collaborate to build something meaningful through innovation and technology!</p>
             </div>
-
             <p className="about-paragraph text-lg text-muted-foreground text-center mb-8">I love staying curious constantly exploring new technologies, frameworks, and tools to keep improving and adapting in the fast-paced world of web development.</p>
-
             <div className="flex gap-4 justify-center">
               <a href="https://www.linkedin.com/in/meeran-mohideen-455505234/" target="_blank" rel="noopener noreferrer"><Button variant="outline" size="icon" className="social-icon-btn"><Linkedin className="h-5 w-5" /></Button></a>
               <a href="https://github.com/Meeranmk" target="_blank" rel="noopener noreferrer"><Button variant="outline" size="icon" className="social-icon-btn"><Github className="h-5 w-5" /></Button></a>
