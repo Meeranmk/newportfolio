@@ -501,21 +501,21 @@ export default function Portfolio() {
       <section id="about" ref={aboutRef} className="py-20 bg-muted/50">
         <div className="container mx-auto px-6">
           <div className="about-content max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center">About Me</h2>
-            <p className="text-lg text-muted-foreground mb-6">
+            <h2 className="about-heading text-4xl md:text-5xl font-bold mb-8 text-center">About Me</h2>
+            <p className="about-text text-lg text-muted-foreground mb-6">
               I'm a passionate full-stack developer with a keen eye for design and a love for creating seamless user experiences. With expertise in modern web technologies, I bring ideas to life through clean code and stunning animations.
             </p>
-            <p className="text-lg text-muted-foreground mb-8">
+            <p className="about-text text-lg text-muted-foreground mb-8">
               My approach combines technical excellence with creative problem-solving, ensuring every project not only functions flawlessly but also delights users with smooth, engaging interactions.
             </p>
-            <div className="flex gap-4 justify-center">
-              <Button variant="outline" size="icon">
+            <div className="social-icons flex gap-4 justify-center">
+              <Button variant="outline" size="icon" className="social-icon">
                 <Github className="h-5 w-5" />
               </Button>
-              <Button variant="outline" size="icon">
+              <Button variant="outline" size="icon" className="social-icon">
                 <Linkedin className="h-5 w-5" />
               </Button>
-              <Button variant="outline" size="icon">
+              <Button variant="outline" size="icon" className="social-icon">
                 <Mail className="h-5 w-5" />
               </Button>
             </div>
