@@ -164,7 +164,7 @@ export default function Portfolio() {
     { name: 'Responsive Design', icon: Palette, color: 'from-indigo-500 to-purple-500' }
   ]
 
-  const toolkit = ['React.js', 'Next.js', 'Redux', 'Context API', 'Tailwind CSS', 'Bootstrap', 'Material UI', 'RESTful APIs', 'GraphQL', 'Git', 'GitHub', 'NPM', 'Yarn', 'Webpack', 'Backstage.io', 'Figma']
+  const toolkit = ['React.js', 'Next.js', 'Redux', 'Context API', 'Tailwind CSS', 'Bootstrap', 'Material UI', 'RESTful APIs', 'Git', 'GitHub', 'NPM', 'Yarn', 'Webpack', 'Backstage.io', 'Figma', 'GSAP', 'TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Strapi.js', 'Framer Motion', 'Lucide Icons', 'Vercel' ]
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
@@ -225,7 +225,7 @@ export default function Portfolio() {
             </div>
 
             <div className="toolkit-section mb-12">
-              <h3 className="text-2xl font-bold mb-6 text-center">My Toolkit</h3>
+              {/* <h3 className="text-2xl font-bold mb-6 text-center">My Toolkit</h3> */}
               <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
                 {toolkit.map((tool, index) => (
                   <div key={index} className="toolkit-item bg-card p-4 rounded-lg text-center hover:bg-primary hover:text-primary-foreground transition-all duration-300 border">
@@ -236,7 +236,7 @@ export default function Portfolio() {
             </div>
 
             <div className="skills-list mb-12">
-              <h3 className="text-2xl font-bold mb-6">Core Skills</h3>
+              {/* <h3 className="text-2xl font-bold mb-6">Core Skills</h3>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="skill-item space-y-2"><h4 className="font-bold text-primary">Frontend Development</h4><p className="text-muted-foreground">React.js, Next.js, Redux, Context API</p></div>
                 <div className="skill-item space-y-2"><h4 className="font-bold text-primary">UI & Styling</h4><p className="text-muted-foreground">Tailwind CSS, Bootstrap, Material UI</p></div>
@@ -244,7 +244,7 @@ export default function Portfolio() {
                 <div className="skill-item space-y-2"><h4 className="font-bold text-primary">Version Control & Build Tools</h4><p className="text-muted-foreground">Git, GitHub, NPM, Yarn, Webpack</p></div>
                 <div className="skill-item space-y-2"><h4 className="font-bold text-primary">Developer Platforms</h4><p className="text-muted-foreground">Backstage.io (IDP)</p></div>
                 <div className="skill-item space-y-2"><h4 className="font-bold text-primary">Design & Networking</h4><p className="text-muted-foreground">Figma, CCNA-certified</p></div>
-              </div>
+              </div> */}
             </div>
 
             <p className="about-paragraph text-lg text-muted-foreground text-center mb-8">I love staying curious constantly exploring new technologies, frameworks, and tools to keep improving and adapting in the fast-paced world of web development.</p>
