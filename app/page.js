@@ -575,23 +575,23 @@ export default function Portfolio() {
       <section id="contact" ref={contactRef} className="py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">Get In Touch</h2>
+            <h2 className="contact-heading text-4xl md:text-5xl font-bold mb-12 text-center">Get In Touch</h2>
             <Card className="contact-form p-8">
               <form onSubmit={handleSubmit}>
                 <div className="space-y-6">
-                  <div>
+                  <div className="form-field">
                     <label className="block text-sm font-medium mb-2">Name</label>
                     <Input name="name" placeholder="Your name" required />
                   </div>
-                  <div>
+                  <div className="form-field">
                     <label className="block text-sm font-medium mb-2">Email</label>
                     <Input name="email" type="email" placeholder="your.email@example.com" required />
                   </div>
-                  <div>
+                  <div className="form-field">
                     <label className="block text-sm font-medium mb-2">Message</label>
                     <Textarea name="message" placeholder="Your message..." rows={5} required />
                   </div>
-                  <Button type="submit" className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:opacity-90">
+                  <Button type="submit" className="submit-button w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:opacity-90">
                     Send Message
                   </Button>
                 </div>
@@ -604,7 +604,7 @@ export default function Portfolio() {
       {/* Footer */}
       <footer className="py-8 border-t">
         <div className="container mx-auto px-6">
-          <p className="text-center text-muted-foreground">
+          <p className="footer-text text-center text-muted-foreground">
             © 2024 Portfolio. Built with Next.js, GSAP & Tailwind CSS
           </p>
         </div>
