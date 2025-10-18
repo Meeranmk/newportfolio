@@ -554,16 +554,16 @@ export default function Portfolio() {
       {/* Skills Section */}
       <section id="skills" ref={skillsRef} className="py-20 bg-muted/50">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">Skills & Expertise</h2>
+          <h2 className="skills-heading text-4xl md:text-5xl font-bold mb-12 text-center">Skills & Expertise</h2>
           <div className="skills-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {skills.map((skill, index) => {
               const Icon = skill.icon
               return (
                 <Card key={index} className="skill-card p-8 text-center hover:shadow-xl transition-shadow">
-                  <div className={`w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r ${skill.color} flex items-center justify-center`}>
+                  <div className={`skill-icon w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r ${skill.color} flex items-center justify-center`}>
                     <Icon className="h-8 w-8 text-white" />
                   </div>
-                  <h3 className="text-lg font-bold">{skill.name}</h3>
+                  <h3 className="skill-name text-lg font-bold">{skill.name}</h3>
                 </Card>
               )
             })}
