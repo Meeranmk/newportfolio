@@ -406,40 +406,41 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce solution with payment integration and admin dashboard',
-      tags: ['Next.js', 'MongoDB', 'Stripe'],
-      link: '#'
+      title: 'Fashion Ecommerce',
+      description: 'High-performance fashion e-commerce platform with responsive design and seamless shopping experience',
+      tags: ['React.js', 'CSS3', 'REST API'],
+      link: 'https://highstore.netlify.app/'
     },
     {
-      title: 'AI Chat Application',
-      description: 'Real-time chat application with AI-powered responses and sentiment analysis',
-      tags: ['React', 'Node.js', 'OpenAI'],
-      link: '#'
+      title: 'React Admin Dashboard',
+      description: 'Feature-rich admin dashboard with data visualization and comprehensive management tools',
+      tags: ['React.js', 'Material UI', 'Charts'],
+      link: 'https://glexadmindashboard.netlify.app/'
     },
     {
-      title: 'Portfolio Generator',
-      description: 'Dynamic portfolio website generator with customizable themes and animations',
-      tags: ['Next.js', 'GSAP', 'Tailwind'],
-      link: '#'
-    },
+      title: 'Space Theme Portfolio',
+      description: 'Creative portfolio website with stunning space theme and smooth animations',
+      tags: ['Next.js', 'Tailwind CSS', 'Animations'],
+      link: 'https://meeran-omega.vercel.app/'
+    }
+  ]
+
+  const workExperience = [
     {
-      title: 'Task Management App',
-      description: 'Collaborative task management tool with real-time updates and notifications',
-      tags: ['React', 'Firebase', 'Material-UI'],
-      link: '#'
-    },
-    {
-      title: 'Weather Dashboard',
-      description: 'Beautiful weather dashboard with forecasts, maps, and historical data',
-      tags: ['Vue.js', 'Chart.js', 'API'],
-      link: '#'
-    },
-    {
-      title: 'Social Media Analytics',
-      description: 'Analytics platform for social media insights with data visualization',
-      tags: ['React', 'D3.js', 'Express'],
-      link: '#'
+      company: 'Prodapt Solutions',
+      role: 'Frontend Developer',
+      projects: [
+        {
+          name: 'Internal Developer Platform (Backstage IDP) - SYSCO',
+          description: 'Built Backstage IDP from scratch, providing a centralized developer portal to streamline engineering workflows. Implemented custom features including Leaderboard, SonarQube integration, GitHub Security plugin, and Jira/Confluence plugins.',
+          technologies: ['Backstage.io', 'React', 'TypeScript']
+        },
+        {
+          name: 'MVNx - AT&T',
+          description: 'Developed a scalable Next.js application with TypeScript and Shadcn UI. Built comprehensive API documentation platform using Strapi.js and enhanced real-time API integrations.',
+          technologies: ['Next.js', 'TypeScript', 'Shadcn UI', 'Strapi.js']
+        }
+      ]
     }
   ]
 
